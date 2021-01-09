@@ -1,6 +1,6 @@
-# Discord Bot
+# Glassmorphism
 
-🤖 Just a glass morphism effect.
+✨ Just a glass morphism effect.
 
 ![](assets/images/web-preview.gif)
 
