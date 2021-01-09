@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#04a2f4, #007de7);
+  clip-path: circle(30% at left 70%);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#007de7, #262d37);
+  clip-path: circle(20% at right 10%);
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+section .card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px #12121280;
+  border-radius: 15px;
+  background: #ffffff1b;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ffffff80;
+  border-left: 1px solid #ffffff80;
+  backdrop-filter: blur(5px);
+}
+
+section .card .item {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+section .card:hover .item {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+section .card .item h1 {
+  position: absolute;
+  top: -80px;
+  right: 20px;
+  font-size: 8em;
+  pointer-events: none;
+  color: #ffffff0d;
+}
+
+section .card .item h2 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+section .card .item p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}

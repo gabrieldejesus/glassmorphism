@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <title>Glassmorphism</title>
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div class="item">
+          <h1>01</h1>
+          <h2>HTML5, CSS3</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum
+            is simply dummy text of the printing.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item">
+          <h1>02</h1>
+          <h2>JavaScript</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum
+            is simply dummy text of the printing.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item">
+          <h1>03</h1>
+          <h2>ReactJS</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum
+            is simply dummy text of the printing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="assets/scripts/vanilla-tilt.js"
+    ></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>
